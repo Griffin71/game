@@ -1,0 +1,179 @@
+/* Basic styles for the body */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #1a1a1a;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    max-height: 40px;
+    margin-right: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    transform: scale(1.2);
+    color: #ff69b4; /* Example color for highlight */
+}
+
+header .search-bar input {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* Hero section styles */
+.hero {
+    background: url('g.png') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero .hero-content h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero .hero-content button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Categories section styles */
+.categories {
+    background: url('g.png') no-repeat center center/cover;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.categories h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.categories .category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.categories .category-grid a {
+    padding: 20px;
+    background-color: #1a1a1a;
+    color: #fff;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.categories .category-grid a:hover {
+    transform: scale(1.2);
+    background-color: #ff69b4;
+}
+
+/* Featured games section styles */
+.featured-games {
+    background: url('g.png') no-repeat center center/cover;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.featured-games h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.featured-games .game-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.featured-games .game-grid a {
+    padding: 20px;
+    background-color: #1a1a1a;
+    color: #fff;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.featured-games .game-grid a:hover {
+    transform: scale(1.2);
+    background-color: #ff69b4;
+}
+
+/* Footer styles */
+footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+footer .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Animation for transition effect */
+@keyframes neonExplosion {
+    0% { background: #1a1a1a; }
+    50% { background: radial-gradient(circle, rgba(255,105,180,1) 0%, rgba(255,255,255,0) 100%); }
+    100% { background: #1a1a1a; }
+}
+
+.neon-transition {
+    animation: neonExplosion 1s forwards;
+}
